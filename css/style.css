@@ -1,0 +1,487 @@
+/* === ESTILOS GENERALES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f6f7;
+  color: #002A3D;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #002A3D;
+}
+
+/* === CONTENEDOR === */
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+.site-header {
+  background: white;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;               
+  text-decoration: none;
+  color: #002A3D;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+
+.logo img {
+  height: 50px;          
+  width: auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.site-nav a {
+  color: #002A3D;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.site-nav a:hover {
+  color: #008AB8;
+}
+
+/* === HERO === */
+.hero {
+  position: relative;
+  height: 85vh;
+  background: url('../img/banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1; 
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  color: white;
+  z-index: 2; 
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #FF9A00
+}
+
+.hero .lead {
+  font-size: 1.2rem;
+  color: #ffffff; 
+}
+
+
+
+
+/* === BIENVENIDA === */
+.bienvenida {
+  padding: 6rem 0;
+}
+
+.bienvenida-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.bienvenida-texto h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.intro {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .8rem 1.6rem;
+  background: #008AB8;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #006e93;
+}
+
+/* === DESTINOS === */
+.destinos {
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.destinos h2 {
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+}
+
+/* === TESTIMONIOS === */
+.testimonials {
+  padding: 5rem 0;
+}
+
+.testi-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.testi {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+/* === FRASE FINAL === */
+.final-phrase {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.final-phrase h2 {
+  font-size: 2rem;
+}
+
+/* === FOOTER === */
+.site-footer {
+  background: #002A3D;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-right ul {
+  list-style: none;
+  display: flex;
+  gap: 1.4rem;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.footer-right a:hover {
+  color: #FF9A00;
+}
+
+
+/* === SOBRE MI === */
+
+.page-hero {
+  background: linear-gradient(#00000050, #00000050), url("../img/disney-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  color: white;
+}
+
+.page-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about-section {
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+/* === CONTENEDOR GENERAL === */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* === COTIZA === */
+.cotiza-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cotiza-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #008AB8;
+  margin-bottom: 10px;
+}
+
+.cotiza-intro {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* === LISTA DE DESTINOS === */
+.destinos-lista {
+  background: #f3f6f7;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.destinos-lista h2 {
+  color: #008AB8;
+  margin-bottom: 10px;
+}
+
+.destinos-lista ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.destinos-lista li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* === FORMULARIO === */
+.cotiza-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cotiza-form h2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  color: #008AB8;
+  font-size: 1.3rem;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #f3f6f7;
+  background: #fff;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+/* Nota */
+.nota-crucero {
+  font-size: 0.9rem;
+  color: #c90b21;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Botón */
+.btn {
+  background: #008AB8;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f3f6f7;
+}
+
+
+/* === CONTACTO === */
+
+.contact-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 120px auto 60px auto; /* espacio para que no choque con el header */
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    color: #162938;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    color: #444;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: 600;
+    color: #162938;
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #162938;
+    outline: none;
+}
+
+/* BOTÓN */
+.contact-form button {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #162938;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #0f1b25;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container p {
+        font-size: 1rem;
+    }
+}

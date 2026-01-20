@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotizá tu viaje - Magic Plans With Martu</title>
+
+  <!-- ESTILOS -->
+   <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a class="logo" href="../index.html">
+      <img src="../img/logo.jpg" alt="Magic Plans With Martu Logo">
+      <span>Magic Plans With Martu</span>
+    </a>
+
+    <nav id="main-nav" class="site-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="cotiza.html">Cotiza</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main class="cotiza-container">
+
+  <h1>Cotizá tu viaje ✨</h1>
+  <p class="cotiza-intro">
+    Completá este formulario y te enviaré una cotización personalizada.  
+    ✨ <i>Si lo soñás, lo podemos planear juntas</i> ✨
+  </p>
+
+  <!-- LISTA DE DESTINOS -->
+  <section class="destinos-lista">
+    <h2>🎯 Destinos disponibles</h2>
+    <ul>
+      <li>🌟 Disney World: Desde 3 días con o sin hotel</li>
+      <li>🌟 Disneyland: Desde 2 días con o sin hotel</li>
+      <li>🌟 Disneyland Paris: Desde 1 día con o sin hotel</li>
+      <li>🌎 Universal Studios Hollywood: Desde 1 día</li>
+      <li>🌎 Universal Orlando: Desde 1 día</li>
+      <li>🛳️ Cruceros Disney</li>
+      <li>🛳️ Cruceros Royal Caribbean</li>
+      <li>🛳️ Cruceros Celebrity X Cruises</li>
+      <li>🌺 Xcaret</li>
+    </ul>
+  </section>
+
+  <!-- FORMULARIO -->
+  <form class="cotiza-form" action="#" method="POST">
+
+    <h2>📝 Información personal</h2>
+
+    <label>Nombre *</label>
+    <input type="text" placeholder="Tu nombre" required>
+
+    <label>Apellido *</label>
+    <input type="text" placeholder="Tu apellido" required>
+
+    <label>Email *</label>
+    <input type="email" placeholder="tuemail@email.com" required>
+
+    <label>País *</label>
+    <select required>
+      <option value="" disabled selected>Selecciona tu país</option>
+      <option>Argentina</option>
+      <option>Chile</option>
+      <option>México</option>
+      <option>Colombia</option>
+      <option>Perú</option>
+      <option>España</option>
+    </select>
+
+    <label>Teléfono con lada *</label>
+    <input type="text" placeholder="+54..." required>
+
+
+    <h2>✨ ¿Qué te gustaría cotizar?</h2>
+
+    <select required>
+      <option disabled selected>Selecciona una opción</option>
+      <option>Sólo tickets a parques</option>
+      <option>Hospedaje y tickets a parques</option>
+      <option>Crucero Disney</option>
+      <option>Crucero Royal Caribbean</option>
+      <option>Crucero Celebrity X Cruises</option>
+      <option>Xcaret</option>
+    </select>
+
+    <p class="nota-crucero">
+      🛳️ <i>Si elegiste la opción de crucero, completá también la sección final.</i>
+    </p>
+
+
+    <h2>🏰 Detalles del viaje</h2>
+
+    <label>Destino *</label>
+    <select required>
+      <option disabled selected>Elegí destino</option>
+      <option>Walt Disney World, Orlando</option>
+      <option>Disneyland California</option>
+      <option>Disneyland Paris</option>
+      <option>Universal Orlando</option>
+      <option>Universal Hollywood</option>
+      <option>Xcaret</option>
+    </select>
+
+    <label>Check-in *</label>
+    <input type="date" required>
+
+    <label>Check-out *</label>
+    <input type="date" required>
+
+    <label>Días en parques *</label>
+    <input type="number" min="0" placeholder="Ej: 3" required>
+
+    <label>N° Adultos viajando *</label>
+    <input type="number" min="1" value="1" required>
+
+    <label>N° Menores viajando *</label>
+    <input type="number" min="0" value="0" required>
+
+    <label>Edades de los menores (separadas por comas)</label>
+    <input type="text" placeholder="Ej: 4, 8, 10">
+
+
+    <!-- SECCIÓN CRUCEROS -->
+    <h2>🛳️ Información de cruceros (si aplica)</h2>
+
+    <label>¿Qué crucero te gustaría cotizar?</label>
+    <select>
+      <option disabled selected>Selecciona crucero</option>
+      <option>Disney Magic</option>
+      <option>Disney Dream</option>
+      <option>Disney Wish</option>
+      <option>Disney Destiny</option>
+      <option>Disney Fantasy</option>
+      <option>Disney Treasure</option>
+      <option>Disney Wonder</option>
+      <option>Royal Caribbean</option>
+      <option>Celebrity X Cruises</option>
+    </select>
+
+    <label>¿De cuántas noches?</label>
+    <select>
+      <option disabled selected>Selecciona una opción</option>
+      <option>1 a 3 noches</option>
+      <option>4 noches</option>
+      <option>5 a 6 noches</option>
+      <option>7 noches</option>
+      <option>8 a 13 noches</option>
+    </select>
+
+    <label>¿Desde dónde te gustaría zarpar?</label>
+    <select>
+      <option disabled selected>Selecciona puerto</option>
+      <option>Vancouver (Canadá)</option>
+      <option>Port Canaveral – Florida</option>
+      <option>San Juan – Puerto Rico</option>
+      <option>Barcelona – España</option>
+      <option>Roma – Italia</option>
+      <option>Sydney – Australia</option>
+      <option>San Diego – California</option>
+      <option>Southampton – Inglaterra</option>
+    </select>
+
+    <label>Presupuesto estimado</label>
+    <select>
+      <option disabled selected>Selecciona rango</option>
+      <option>$2.000 a $3.000 USD</option>
+      <option>$3.000 a $4.000 USD</option>
+      <option>$4.000 a $5.000 USD</option>
+      <option>$5.000 a $6.000 USD</option>
+      <option>$6.000 a $7.000 USD</option>
+    </select>
+
+    <label>Comentarios adicionales</label>
+    <textarea placeholder="Contame lo que necesites ajustar"></textarea>
+
+    <button type="submit" class="btn">Enviar</button>
+
+  </form>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-left">
+      <p><strong>Magic Plans With Martu</strong></p>
+      <p>© 2025 Magic Plans With Martu</p>
+    </div>
+
+    <nav class="footer-right">
+      <ul class="socials">
+        <li><a href="https://www.instagram.com/magicplans.martu?igsh=cHVwdmc2OHY4b2Zj&utm_source=qr" target="_blank" rel="noopener">📸 Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@magicplanswithmartu?_r=1&_t=ZM-91xILCG2YCO" target="_blank" rel="noopener">🎵 TikTok</a></li>
+        <li><a href="https://www.youtube.com/@MagicPlanswithMartu" target="_blank" rel="noopener">▶️ YouTube</a></li>
+        <li><a href="https://wa.me/5491170380959" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</footer>
+
+</body>
+</html>
